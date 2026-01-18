@@ -82,7 +82,7 @@ const Hero = () => {
             </a>
             <a
               href="#contact"
-              className="rounded-full border border-black/10 dark:border-white/20 bg-black/5 dark:bg-white/5 px-8 py-3 font-bold text-slate-900 dark:text-white backdrop-blur-sm transition-all hover:bg-black/10 dark:hover:bg-white/10"
+              className="rounded-full border border-slate-200 dark:border-white/20 bg-white dark:bg-white/5 px-8 py-3 font-bold text-slate-900 dark:text-white backdrop-blur-sm transition-all hover:bg-slate-50 dark:hover:bg-white/10 hover:border-blue-500/30 shadow-sm dark:shadow-none"
             >
               Get In Touch
             </a>

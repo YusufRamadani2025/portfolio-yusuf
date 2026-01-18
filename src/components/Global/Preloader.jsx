@@ -27,7 +27,7 @@ const Preloader = ({ finishLoading }) => {
 
     // Cleanup
     const timeout = setTimeout(() => {
-      finishLoading();
+      if (finishLoading) finishLoading();
     }, 2500);
 
     return () => {
@@ -60,10 +60,10 @@ const Preloader = ({ finishLoading }) => {
 
         {/* System Details (Random data effect) */}
         <div className="mt-4 font-mono text-[10px] text-gray-600 h-12 overflow-hidden flex flex-col justify-end">
-           {progress > 20 && <p>> Loading core modules...</p>}
-           {progress > 40 && <p>> Establishing secure connection...</p>}
-           {progress > 70 && <p>> Decrypting user interface...</p>}
-           {progress > 90 && <p className="text-green-500">> ACCESS GRANTED</p>}
+           {progress > 20 && <p>&gt; Loading core modules...</p>}
+           {progress > 40 && <p>&gt; Establishing secure connection...</p>}
+           {progress > 70 && <p>&gt; Decrypting user interface...</p>}
+           {progress > 90 && <p className="text-green-500">&gt; ACCESS GRANTED</p>}
         </div>
       </div>
     </div>

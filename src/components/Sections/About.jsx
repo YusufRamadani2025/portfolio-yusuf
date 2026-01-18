@@ -48,7 +48,7 @@ const About = () => {
               ? 'opacity-100 translate-x-0 pointer-events-auto delay-300' 
               : 'opacity-0 -translate-x-10 pointer-events-none'}`}
         >
-            <div className="glass p-8 md:p-12 rounded-3xl border border-white/10 backdrop-blur-xl bg-white/5 relative shadow-2xl">
+            <div className="glass p-8 md:p-12 rounded-3xl border border-slate-200 dark:border-white/10 backdrop-blur-xl bg-white/80 dark:bg-white/5 relative shadow-2xl">
               <button 
                 onClick={(e) => { e.stopPropagation(); setIsExpanded(false); }}
                 className="absolute top-6 right-6 text-slate-400 hover:text-slate-900 dark:text-gray-500 dark:hover:text-white transition-colors p-2 z-50 text-xl"
@@ -59,7 +59,7 @@ const About = () => {
 
               <h2 className="text-blue-500 font-mono mb-4 tracking-widest uppercase text-sm md:text-base">/ Identity Verified</h2>
               <h1 
-                className="text-3xl md:text-5xl font-black mb-6 cursor-default inline-block break-words max-w-full"
+                className="text-3xl md:text-5xl font-black mb-6 cursor-default inline-block break-words max-w-full text-slate-900 dark:text-white"
                 onMouseOver={triggerNameEffect}
               >
                 {hackerName}
@@ -141,7 +141,7 @@ const About = () => {
               {/* TEXT HINT (Only visible when collapsed & idle) */}
               <div className={`absolute top-64 md:top-96 w-80 text-center transition-all duration-500 
                   ${isExpanded || isScanning || isVerified ? 'opacity-0 translate-y-10' : 'opacity-100 translate-y-0'}`}>
-                 <h2 className="text-xl md:text-3xl font-bold tracking-widest uppercase text-white mb-1">Identity Protected</h2>
+                 <h2 className="text-xl md:text-3xl font-bold tracking-widest uppercase text-slate-900 dark:text-white mb-1">Identity Protected</h2>
                  <p className="text-blue-400 text-xs md:text-base font-mono tracking-wide flex items-center justify-center gap-2">
                    <span className="animate-ping w-2 h-2 rounded-full bg-blue-500"></span>
                    Click to Decrypt

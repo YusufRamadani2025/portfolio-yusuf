@@ -61,11 +61,10 @@ const ParticleBg = () => {
     const connectionDistance = 150;
     const mouseDistance = 200;
 
-    // Determine line color based on theme
-    // Light Mode: Darker Gray lines
-    // Dark Mode: Lighter Slate lines
+    // Light Mode: Very subtle gray (Slate-200/300) to avoid "messy" look
+    // Dark Mode: Slate-500
     const lineColor = theme === 'light' 
-        ? { r: 71, g: 85, b: 105 } // Slate-600
+        ? { r: 203, g: 213, b: 225 } // Slate-300 - Much lighter
         : { r: 100, g: 116, b: 139 }; // Slate-500
 
     const initParticles = () => {

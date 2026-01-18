@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <footer id="contact" className="relative pt-20 pb-10 overflow-hidden px-4 md:px-0">
       <div className="container mx-auto md:px-6">
-        <div className="glass rounded-[2rem] md:rounded-[3rem] border border-black/5 dark:border-white/10 bg-white/60 dark:bg-white/5 p-8 md:p-20 text-center relative overflow-hidden">
+        <div className="glass rounded-[2rem] md:rounded-[3rem] border border-slate-200 dark:border-white/10 bg-white/60 dark:bg-white/5 p-8 md:p-20 text-center relative overflow-hidden shadow-xl dark:shadow-none">
           {/* Decorative background glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 md:w-96 md:h-96 bg-blue-500/20 blur-[120px] rounded-full -z-10"></div>
           
@@ -35,7 +35,7 @@ const Contact = () => {
               <a 
                 key={i}
                 href={social.link}
-                className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-2xl bg-black/5 dark:bg-white/5 border border-black/5 dark:border-white/10 text-xl md:text-2xl text-slate-900 dark:text-white transition-all hover:bg-blue-500 hover:border-blue-500 hover:-translate-y-2 hover:text-white dark:hover:text-white"
+                className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center rounded-2xl bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 text-xl md:text-2xl text-slate-900 dark:text-white transition-all hover:bg-blue-500 hover:border-blue-500 hover:-translate-y-2 hover:text-white dark:hover:text-white"
               >
                 {social.icon}
               </a>
@@ -43,11 +43,11 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="mt-12 md:mt-20 flex flex-col md:flex-row items-center justify-between text-gray-500 text-xs md:text-sm border-t border-white/10 pt-8 md:pt-10">
+        <div className="mt-12 md:mt-20 flex flex-col md:flex-row items-center justify-between text-gray-500 text-xs md:text-sm border-t border-slate-200 dark:border-white/10 pt-8 md:pt-10">
           <p className="mb-4 md:mb-0">© 2026 Yusuf Ramadani. Built with React & Tailwind v4.</p>
           <div className="flex gap-6 md:gap-8">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-blue-500 dark:hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-blue-500 dark:hover:text-white transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>
